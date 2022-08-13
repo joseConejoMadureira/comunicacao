@@ -3,7 +3,7 @@
     <h2>As Informações de Usuário</h2>
     <p>Vários detalhes...</p>
     <p>
-      nome de usuario <strong>{{ nome }}</strong>
+      Nome de Usuário: <strong>{{ nome }}</strong>
     </p>
   </div>
 </template>
