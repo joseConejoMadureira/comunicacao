@@ -10,7 +10,9 @@
 
 <script>
 export default {
-  props: ["nome"],
+  props: {
+    nome: {type: String}
+  }
 };
 </script>
 
