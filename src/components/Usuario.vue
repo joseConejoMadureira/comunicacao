@@ -2,6 +2,7 @@
     <div class="container">
         <h1>Componente Usuário</h1>
         <p>Esse é um componente muito legal!</p>
+        <button @click="alterarNome" >alterar nome</button>
         <hr>
         <div class="componentes">
             <app-usuario-info :nome="nome"/>
@@ -19,6 +20,11 @@ export default {
     data() {
         return {
             nome:'jose antonio'
+        }
+    },
+    methods: {
+        alterarNome(){
+            this.nome = 'antonio'
         }
     },
 }
