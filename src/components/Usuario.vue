@@ -4,7 +4,7 @@
         <p>Esse é um componente muito legal!</p>
         <hr>
         <div class="componentes">
-            <app-usuario-info />
+            <app-usuario-info :nome="nome"/>
             <app-usuario-editar />
         </div>
     </div>
@@ -15,7 +15,12 @@ import AppUsuarioInfo from './UsuarioInfo'
 import AppUsuarioEditar from './UsuarioEditar'
 
 export default {
-    components: { AppUsuarioInfo, AppUsuarioEditar }
+    components: { AppUsuarioInfo, AppUsuarioEditar },
+    data() {
+        return {
+            nome:'jose antonio'
+        }
+    },
 }
 </script>
 
